@@ -6,7 +6,7 @@ function Login() {
     username: "",
     password: "",
   });
-console.log(login)
+
   function handleChange(e) {
     setFormData({
       ...formData,
@@ -21,7 +21,7 @@ console.log(login)
 
   return (
     <form onSubmit={handleLogin}>
-      <label for="username">Username</label>
+      <label htmlFor="username">Username</label>
       <div>
         <input
           id="username"
@@ -31,7 +31,7 @@ console.log(login)
           onChange={handleChange}
         />
       </div>
-      <label for="password">Password</label>
+      <label htmlFor="password">Password</label>
       <div>
         <input
           id="password"
